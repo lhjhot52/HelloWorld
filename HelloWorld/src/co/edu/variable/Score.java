@@ -19,6 +19,7 @@ public class Score {
 		sum = num1+num2+num3;
 		avg = sum / 3.0;
 		
+		//최고점을 구하는 방식(num1, num2, num3) 	비교.
 		maxValue = num1;
 		if (maxValue < num2) {
 			maxValue = num2;
@@ -28,9 +29,9 @@ public class Score {
 		} 
 			
 		System.out.printf("합은 %3d이고 평균은 %.2f이고 최고점은 %3d점입니다.",sum,avg,maxValue);	
-		}
+	}
 			
-		}
+}
 		
 	
 
