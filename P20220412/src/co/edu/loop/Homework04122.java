@@ -11,7 +11,7 @@ public class Homework04122 {
 		   int me = sc.nextInt();
 		   if(com == 1 && me == 2) {
 			   System.out.println("You Win.");
-			   System.out.println("컴퓨터는 보를냈어요.");
+			   System.out.println("컴퓨터는 가위를냈어요.");
 			   continue;
 		   }else if(com == 2 && me == 3) {
 			   System.out.println("You Win.");
@@ -19,7 +19,7 @@ public class Homework04122 {
 			   continue;
 		   }else if(com == 3 && me == 1) {
 			   System.out.println("You Win.");
-			   System.out.println("컴퓨터는 가위를냈어요.");
+			   System.out.println("컴퓨터는 보를냈어요.");
 			   continue;
 		   }else {
 			   System.out.println("You lose.");
