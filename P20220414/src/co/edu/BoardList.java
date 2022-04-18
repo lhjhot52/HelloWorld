@@ -69,6 +69,21 @@ public class BoardList {
 	public Board[] boardList() {
 		return boards;
 	}
-	
+	// 작성자 조회기능.
+	public Board[] getWriterList(String writer) {
+		Board[] sBoards = new Board[5];
+		
+		for(int i=0; i<boards.length; i++) { // 찾을 대상 배열.
+			if(boards[i] != null && boards[i].getWriter().equals(writer)) {
+				for(int j=0; j<sBoards.length; j++) { // 이름 조회 반환 배열.
+					if(sBoards[j] == null) {
+						sBoards[j] = boards[i];
+						break;
+					}
+				}
+			}
+		}
+		
+		return sBoards;
+	}
 }
-

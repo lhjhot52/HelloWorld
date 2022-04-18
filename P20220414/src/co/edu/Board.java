@@ -1,12 +1,14 @@
 package co.edu;
 
-public class Board {
+public class Board extends Object {
 	// 게시글번호, 제목, 내용, 작성자, 조회회수(조회할때마다 증가)
 	private int boardNo;
 	private String title;
 	private String content;
 	private String writer;
 	private int searchCnt = 0;
+	
+
 	
 	// 생성자.
 	public Board(int boardNo, String title, String content, String writer) {
@@ -74,4 +76,9 @@ public class Board {
         System.out.printf(info,this.boardNo, this.writer, this.title, this.searchCnt, this.content);
 
 	}
-}
+
+	
+	}
+	
+	
+

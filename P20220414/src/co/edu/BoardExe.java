@@ -80,7 +80,18 @@ public class BoardExe {
 					getBoard.getDetailInfo();
 					
 				}
-					
+			}else if(menu == 6) { // 작성자 
+				System.out.println("검색할 작성자 입력>>> ");
+				String sWriter = scn.nextLine();
+				Board[] writerList = boardList.getWriterList(sWriter);
+				// writerList 내용 출력.
+				System.out.println("게시글번호 제목         내용         사용자  조회수");
+				System.out.println("============================================");
+				for (Board board : writerList) {
+					if(board != null) {
+					   board.getInfo();
+					}
+				}
 			}else if(menu == 9) {
 				System.out.println("프로그램을 종료합니다.");
 				break;
