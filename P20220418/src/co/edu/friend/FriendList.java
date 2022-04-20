@@ -51,9 +51,9 @@ public class FriendList {
 				}
 
 			} else if (menu == 2) {
-				for (Friend friend : friends) {
-					if (friend != null) {
-						System.out.println("친구정보: " + friend.toString());
+				for (Friend i : friends) {
+					if (i != null) {
+						System.out.println("친구정보: " + i.toString());
 					} else {
 
 					}
